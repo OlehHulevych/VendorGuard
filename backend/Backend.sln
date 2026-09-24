@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VendorGuard.Api", "VendorGuard.Api\VendorGuard.Api.csproj", "{19E6F735-5321-49FE-9419-CE02E5CFE505}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VendorGuard.Application", "VendorGuard.Application\VendorGuard.Application.csproj", "{6E9C41B9-CB7D-4878-8BBA-49CAE86AFAD0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VendorGuard.Domain", "VendorGuard.Domain\VendorGuard.Domain.csproj", "{317C9720-C7C7-4F8F-9261-FADD7410F2DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VendorGuard.Infrastructure", "VendorGuard.Infrastructure\VendorGuard.Infrastructure.csproj", "{59F2939B-E43B-435B-A488-7BEEDF5AFD1F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{E0EDFFAD-F649-4788-B0E6-E1404B11DD60}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VendorGuard.ArchTests", "VendorGuard.ArchTests\VendorGuard.ArchTests.csproj", "{3C803A69-2A4F-405F-BAE7-0CBB01613ADA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{19E6F735-5321-49FE-9419-CE02E5CFE505} = {19E6F735-5321-49FE-9419-CE02E5CFE505}
+		{6E9C41B9-CB7D-4878-8BBA-49CAE86AFAD0} = {6E9C41B9-CB7D-4878-8BBA-49CAE86AFAD0}
+		{317C9720-C7C7-4F8F-9261-FADD7410F2DC} = {317C9720-C7C7-4F8F-9261-FADD7410F2DC}
+		{59F2939B-E43B-435B-A488-7BEEDF5AFD1F} = {59F2939B-E43B-435B-A488-7BEEDF5AFD1F}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{19E6F735-5321-49FE-9419-CE02E5CFE505}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19E6F735-5321-49FE-9419-CE02E5CFE505}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19E6F735-5321-49FE-9419-CE02E5CFE505}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19E6F735-5321-49FE-9419-CE02E5CFE505}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E9C41B9-CB7D-4878-8BBA-49CAE86AFAD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E9C41B9-CB7D-4878-8BBA-49CAE86AFAD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E9C41B9-CB7D-4878-8BBA-49CAE86AFAD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E9C41B9-CB7D-4878-8BBA-49CAE86AFAD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{317C9720-C7C7-4F8F-9261-FADD7410F2DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{317C9720-C7C7-4F8F-9261-FADD7410F2DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{317C9720-C7C7-4F8F-9261-FADD7410F2DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{317C9720-C7C7-4F8F-9261-FADD7410F2DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59F2939B-E43B-435B-A488-7BEEDF5AFD1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59F2939B-E43B-435B-A488-7BEEDF5AFD1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59F2939B-E43B-435B-A488-7BEEDF5AFD1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59F2939B-E43B-435B-A488-7BEEDF5AFD1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C803A69-2A4F-405F-BAE7-0CBB01613ADA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C803A69-2A4F-405F-BAE7-0CBB01613ADA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C803A69-2A4F-405F-BAE7-0CBB01613ADA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C803A69-2A4F-405F-BAE7-0CBB01613ADA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3C803A69-2A4F-405F-BAE7-0CBB01613ADA} = {E0EDFFAD-F649-4788-B0E6-E1404B11DD60}
+	EndGlobalSection
+EndGlobal

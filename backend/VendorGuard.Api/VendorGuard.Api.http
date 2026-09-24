@@ -1,0 +1,6 @@
+@VendorGuard.Api_HostAddress = http://localhost:5127
+
+GET {{VendorGuard.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
