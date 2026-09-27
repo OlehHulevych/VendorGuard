@@ -1,12 +1,24 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VendorGuard.Api", "VendorGuard.Api\VendorGuard.Api.csproj", "{19E6F735-5321-49FE-9419-CE02E5CFE505}"
+	ProjectSection(ProjectDependencies) = postProject
+		{59F2939B-E43B-435B-A488-7BEEDF5AFD1F} = {59F2939B-E43B-435B-A488-7BEEDF5AFD1F}
+		{317C9720-C7C7-4F8F-9261-FADD7410F2DC} = {317C9720-C7C7-4F8F-9261-FADD7410F2DC}
+		{6E9C41B9-CB7D-4878-8BBA-49CAE86AFAD0} = {6E9C41B9-CB7D-4878-8BBA-49CAE86AFAD0}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VendorGuard.Application", "VendorGuard.Application\VendorGuard.Application.csproj", "{6E9C41B9-CB7D-4878-8BBA-49CAE86AFAD0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{317C9720-C7C7-4F8F-9261-FADD7410F2DC} = {317C9720-C7C7-4F8F-9261-FADD7410F2DC}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VendorGuard.Domain", "VendorGuard.Domain\VendorGuard.Domain.csproj", "{317C9720-C7C7-4F8F-9261-FADD7410F2DC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VendorGuard.Infrastructure", "VendorGuard.Infrastructure\VendorGuard.Infrastructure.csproj", "{59F2939B-E43B-435B-A488-7BEEDF5AFD1F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{317C9720-C7C7-4F8F-9261-FADD7410F2DC} = {317C9720-C7C7-4F8F-9261-FADD7410F2DC}
+		{6E9C41B9-CB7D-4878-8BBA-49CAE86AFAD0} = {6E9C41B9-CB7D-4878-8BBA-49CAE86AFAD0}
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{E0EDFFAD-F649-4788-B0E6-E1404B11DD60}"
 EndProject

@@ -1,11 +1,17 @@
-﻿using System.ComponentModel.DataAnnotations;
-
+﻿
 namespace VendorGuard.Domain.Common;
 
 public class BaseEntity
 {
-    [Key] public Guid Id { get; } = Guid.NewGuid();
-    public DateTimeOffset UpdatedAt { get; } = new DateTimeOffset();
-    public DateTimeOffset CreatedAt { get; } = new DateTimeOffset();
-    public Boolean Deleted { get; } = false;
+    public Guid Id { get; } = Guid.NewGuid();
+    public DateTimeOffset UpdatedAt { get; private set; }
+    public DateTimeOffset CreatedAt { get; private set; }
+    public bool Deleted { get; private set; }
+    public void MarkDeleted() => Deleted = true;
+
+    public void SetTimestamps(DateTimeOffset now)
+    {
+        if (CreatedAt == default) CreatedAt = now;
+        UpdatedAt = now;
+    }
 }
