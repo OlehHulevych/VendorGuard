@@ -2,7 +2,7 @@
 
 namespace VendorGuard.Infrastructure.Data;
 
-public class ApplicationUser:IdentityUser
+public class ApplicationUser:IdentityUser<Guid>
 {
     
 }
